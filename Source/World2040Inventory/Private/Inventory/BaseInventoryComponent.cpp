@@ -58,6 +58,7 @@ void UBaseInventoryComponent::AddItem(TSubclassOf<UItemObject> ItemClass)
 	}
 
 	ItemInstance->ItemInfo.UniqueID = ItemInstance->GetUniqueID();
+	ItemInstance->ItemInfo.ItemInstance = ItemInstance; // TODO: MAYBE FIX IT
 	FillToCells(ItemInstance->ItemInfo);
 	Entries.Add(ItemInstance->ItemInfo);
 }

@@ -108,7 +108,7 @@ void UGridInventoryWidget::RefreshInventorySlots()
 	for (const FItemInfo& ItemInfo : ItemsArray)
 	{
 		UItemSlotWidget* Widget = CreateWidget<UItemSlotWidget>(this, SlotWidgetClass);
-		if (!Widget) continue;;
+		if (!Widget) continue;
 
 		Widget->ItemInfo = ItemInfo;
 		
